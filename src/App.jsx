@@ -134,7 +134,7 @@ const toggleAudio = async () => {
 
       <audio
   ref={audioRef}
-  src="/audio/space-ambient.mp3"
+  src={`${import.meta.env.BASE_URL}audio/space-ambient.mp3`}
   preload="auto"
   loop
   muted={isMuted}
