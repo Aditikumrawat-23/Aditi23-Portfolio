@@ -7703,3 +7703,13 @@ box-shadow:
   border-color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.08);
 }
+
+/* Desktop only — Contact planet text */
+@media (min-width: 769px) {
+  .contact-section .contact-identity,
+  .contact-section .contact-identity h3,
+  .contact-section .contact-identity p,
+  .contact-section .contact-identity span {
+    color: #000 !important;
+  }
+}
