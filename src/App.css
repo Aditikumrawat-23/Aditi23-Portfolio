@@ -4218,7 +4218,7 @@ box-shadow:
 .contact-identity h3 {
   margin: 0;
 
-  color: rgba(255, 255, 255, 0.95);
+  color: #000000;
   font-family: 'DM Serif Display', serif;
   font-size: 27px;
   font-weight: 400;
@@ -4239,7 +4239,7 @@ box-shadow:
 .contact-role {
   margin: 0;
 
-  color: rgba(255, 255, 255, 0.9);
+  color: #000000;
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
@@ -4249,7 +4249,7 @@ box-shadow:
 .contact-tagline {
   margin: 0;
 
-  color: rgba(245, 245, 242, 0.68);
+   color: #000000;
   font-family: var(--font-body);
   font-size: 17px;
 }
@@ -7702,14 +7702,4 @@ box-shadow:
 .audio-control:hover {
   border-color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.08);
-}
-
-/* Desktop only — Contact planet text */
-@media (min-width: 769px) {
-  .contact-section .contact-identity,
-  .contact-section .contact-identity h3,
-  .contact-section .contact-identity p,
-  .contact-section .contact-identity span {
-    color: #000 !important;
-  }
 }
