@@ -3873,11 +3873,11 @@ box-shadow:
 .contact-bottom-planet {
   position: absolute;
   left: 53%;
-  bottom: -150px;
+  bottom: -120px;
   transform: translateX(-50%);
 
-  width: 2500px;
-  height: 700px;
+  width: 2100px;
+  height: 460px;
 
   border-radius: 50% 50% 0 0;
   overflow: hidden;
