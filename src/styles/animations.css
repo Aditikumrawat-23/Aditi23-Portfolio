@@ -1,0 +1,157 @@
+/* =================================
+   GLOBAL ANIMATIONS
+   ================================= */
+
+/* ---------------------------------
+   FADE UP
+   --------------------------------- */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------------
+   FADE IN
+   --------------------------------- */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity var(--transition-slow);
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+/* ---------------------------------
+   SCALE IN
+   --------------------------------- */
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------------------------------
+   TEXT REVEAL
+   --------------------------------- */
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(30px);
+  clip-path: inset(0 0 100% 0);
+  transition:
+    opacity 800ms ease,
+    transform 800ms ease,
+    clip-path 800ms ease;
+}
+
+.reveal-text.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  clip-path: inset(0 0 0 0);
+}
+
+/* ---------------------------------
+   STAGGER DELAYS
+   --------------------------------- */
+
+.delay-1 {
+  transition-delay: 100ms;
+}
+
+.delay-2 {
+  transition-delay: 200ms;
+}
+
+.delay-3 {
+  transition-delay: 300ms;
+}
+
+.delay-4 {
+  transition-delay: 400ms;
+}
+
+.delay-5 {
+  transition-delay: 500ms;
+}
+
+.delay-6 {
+  transition-delay: 600ms;
+}
+
+/* ---------------------------------
+   SUBTLE FLOAT
+   --------------------------------- */
+
+.float {
+  animation: subtleFloat 6s ease-in-out infinite;
+}
+
+@keyframes subtleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ---------------------------------
+   STAR TWINKLE
+   --------------------------------- */
+
+.twinkle {
+  animation: starTwinkle 4s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* ---------------------------------
+   REDUCED MOTION
+   --------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .fade-in,
+  .scale-in,
+  .reveal-text {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+
+  .float,
+  .twinkle {
+    animation: none;
+  }
+}

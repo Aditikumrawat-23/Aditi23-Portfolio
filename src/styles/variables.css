@@ -1,0 +1,78 @@
+:root {
+  /* ================================
+     COLORS — CINEMATIC BLACK
+     ================================ */
+
+  --color-black: #050505;
+  --color-black-soft: #080808;
+  --color-charcoal: #101010;
+
+  --color-white: #f5f5f2;
+  --color-gray: #a6a6a3;
+  --color-gray-muted: #666663;
+
+  /* ================================
+     GLASS
+     ================================ */
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.07);
+
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-border-hover: rgba(255, 255, 255, 0.22);
+
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+
+  /* ================================
+     TYPOGRAPHY
+     ================================ */
+
+  --font-display: "Instrument Serif", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* ================================
+     SPACING
+     ================================ */
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+  --space-4xl: 8rem;
+
+  /* ================================
+     RADIUS
+     ================================ */
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* ================================
+     GLASS BLUR
+     ================================ */
+
+  --blur-glass: blur(20px);
+  --blur-heavy: blur(32px);
+
+  /* ================================
+     TRANSITIONS
+     ================================ */
+
+  --transition-fast: 180ms ease;
+  --transition-medium: 350ms ease;
+  --transition-slow: 700ms ease;
+
+  /* ================================
+     Z-INDEX
+     ================================ */
+
+  --z-background: 0;
+  --z-content: 10;
+  --z-navigation: 100;
+  --z-cursor: 1000;
+}

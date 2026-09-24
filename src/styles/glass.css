@@ -1,0 +1,77 @@
+/* ================================
+   PREMIUM GLASS
+   ================================ */
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+
+  box-shadow:
+    inset 0 1px 0 var(--glass-highlight),
+    0 20px 60px rgba(0, 0, 0, 0.25);
+
+  transition:
+    background var(--transition-medium),
+    border-color var(--transition-medium),
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium);
+}
+
+.glass:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-3px);
+
+  box-shadow:
+    inset 0 1px 0 var(--glass-highlight),
+    0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* ================================
+   GLASS CONTENT
+   ================================ */
+
+.glass-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================================
+   SUBTLE GLASS HIGHLIGHT
+   ================================ */
+
+.glass-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.06),
+    transparent 35%
+  );
+
+  pointer-events: none;
+}
+
+/* ================================
+   REDUCED MOTION
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .glass {
+    transition: none;
+  }
+
+  .glass:hover {
+    transform: none;
+  }
+}
